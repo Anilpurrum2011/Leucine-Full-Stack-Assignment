@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #2d3748;
+}
+
+/* Container Styles */
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding : 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  color: #4a6bff;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Input and Button Styles */
+.input-group {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4a6bff;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Todo List Styles */
+.todo-list {
+  margin: 1.5rem 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.todo-text {
+  flex: 1;
+  margin-right: 1rem;
+  word-break: break-word;
+}
+
+.todo-actions button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Button Colors */
+.add-btn {
+  background-color: #4a6bff;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #f6ad55;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f56565;
+  color: white;
+}
+
+.save-btn {
+  background-color: #48bb78;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #a0aec0;
+  color: white;
+}
+
+.summary-btn {
+  background-color: #03ae1d;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Message Styles */
+.message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #dcdcdc;
+  color: #000000;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Edit Mode Styles */
+.edit-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
