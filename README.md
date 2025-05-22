@@ -1,4 +1,4 @@
-#  Todo Summary Assistant – React + Node.js + Ollama + Slack + MongoDB
+#  Todo Summary Assistant 
 
 - This is a Todo List app that helps you keep track of your tasks. After you add or update your to-dos, the app uses a small built-in AI (called gemma:2b from Ollama) to create a short summary of your tasks. 
   Then, it automatically sends that summary to a Slack channel using a simple connection called a webhook — so your team always knows what’s going on.
@@ -69,7 +69,9 @@ OLLAMA_MODEL=gemma:2b
 We use **Ollama's local LLM** to summarize todos.
 
 ### Steps to run locally:
-1. [Install Ollama](https://ollama.com)
+
+1. Install Ollama: https://ollama.com
+   
 2. Pull the `gemma:2b` model:
    ```bash
    ollama pull gemma:2b
@@ -93,7 +95,6 @@ We use **Slack Incoming Webhooks** to post LLM-generated summaries.
    ```env
    SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXX/YYY/ZZZ
    ```
-
 ---
 
 ##  Setup Instructions
@@ -174,21 +175,15 @@ npm run dev
 
 ---
 
-##  Sample Summary Output
-
-```
- *Your Todo Summary*:
-- Finish React UI
-- Connect to MongoDB
-- Summarize with Ollama
-- Push to GitHub
-- Deploy on Vercel
-
-```
-
 ---
 
 ##  Screenshots
+
+![image](https://github.com/user-attachments/assets/64d3b980-df05-4107-bd4e-bcf9f1aeb1b2)
+![image](https://github.com/user-attachments/assets/d04dc338-8152-448d-b2c1-5e57970bf2b6)
+![image](https://github.com/user-attachments/assets/2530447d-b742-43d9-89a5-90ca5663ad43)
+
+
 
 
 ---
