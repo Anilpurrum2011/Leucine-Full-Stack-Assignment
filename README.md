@@ -1,12 +1,11 @@
-# ✅ AI-Powered Todo App – React + Node.js + Ollama + Slack + MongoDB
+#  Todo Summary Assistant – React + Node.js + Ollama + Slack + MongoDB
 
-This is a full-stack Todo List app that lets you manage todos and generate meaningful summaries using a **local LLM (Ollama's `gemma:2b`)**. The summary is then sent to a **Slack channel** via Incoming Webhooks.
-
+This is a Todo List app that helps you keep track of your tasks. After you add or update your to-dos, the app uses a small built-in AI (called gemma:2b from Ollama) to create a short summary of your tasks. Then, it automatically sends that summary to a Slack channel using a simple connection called a webhook—so your team always knows what’s going on.
 ---
 
-## 🚀 Features
+##  Features
 
-- Add, edit, delete todos
+- Add, edit, save, delete todos
 - View a list of current todos
 - Generate an intelligent summary of tasks using **Ollama's Gemma LLM**
 - Post the summary to **Slack**
@@ -15,56 +14,56 @@ This is a full-stack Todo List app that lets you manage todos and generate meani
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 | Layer        | Stack                          |
 |--------------|--------------------------------|
 | Frontend     | React, Axios                   |
 | Backend      | Node.js, Express               |
 | LLM          | Ollama (`gemma:2b`)            |
-| Database     | MongoDB (Atlas or local)       |
+| Database     | MongoDB (Atlas)       |
 | Messaging    | Slack Incoming Webhooks        |
 | Hosting      | Vercel (frontend/backend)      |
 
 ---
 
-## 🌐 Project Structure
+##  Project Structure
 
 ```
-📦 project-root
-├── backend/
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── .env.example
-│   └── server.js
-├── frontend/
+ project-root
+├── client/
 │   ├── src/
 │   └── public/
+├── server/
+│   ├── routes/
+│   ├── models/
+│   ├── .env
+│   └── index.js
 ├── README.md
 └── vercel.json
 ```
 
 ---
 
-## 📦 Environment Variables
+##  Environment Variables
 
-### ✅ `.env.example`
+###  `.env`
 
 ```env
 # MongoDB
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/todos
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/leucinefullstack
 
 # Slack
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXX/YYY/ZZZ
 
 # Ollama
 OLLAMA_API_URL=http://localhost:11434/api/generate
+OLLAMA_MODEL=gemma:2b
 ```
 
 ---
 
-## 🧠 LLM Integration (Ollama – `gemma:2b`)
+##  LLM Integration (Ollama – `gemma:2b`)
 
 We use **Ollama's local LLM** to summarize todos.
 
@@ -78,17 +77,9 @@ We use **Ollama's local LLM** to summarize todos.
    ```bash
    ollama run gemma:2b
    ```
-4. The backend hits `http://localhost:11434/api/generate` with a prompt like:
-   ```json
-   {
-     "model": "gemma:2b",
-     "prompt": "Summarize the following todos:\n1. Build frontend\n2. Set up MongoDB\n3. Deploy to Vercel"
-   }
-   ```
-
 ---
 
-## 💬 Slack Integration
+##  Slack Integration
 
 We use **Slack Incoming Webhooks** to post LLM-generated summaries.
 
@@ -104,18 +95,9 @@ We use **Slack Incoming Webhooks** to post LLM-generated summaries.
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
-### 1️⃣ Backend Setup
-
-```bash
-cd backend
-npm install
-cp .env.example .env   # Fill in MongoDB, Slack, Ollama details
-npm run dev
-```
-
-### 2️⃣ Frontend Setup
+###  Frontend Setup
 
 ```bash
 cd frontend
@@ -123,9 +105,18 @@ npm install
 npm start
 ```
 
+###  Backend Setup
+
+```bash
+cd backend
+npm install
+cp .env .env   # Fill in MongoDB, Slack, Ollama details
+npm run dev
+```
+
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint         | Description                      |
 |--------|------------------|----------------------------------|
@@ -137,7 +128,7 @@ npm start
 
 ---
 
-## 🧱 MongoDB Schema
+##  MongoDB Schema
 
 ### Todo Model (`models/Todo.js`)
 
@@ -151,7 +142,7 @@ npm start
 
 ---
 
-## ☁️ Deployment (Vercel)
+##  Deployment (Vercel)
 
 ### 1. Connect your GitHub repo
 - Create a Vercel account
@@ -173,7 +164,7 @@ npm start
 
 ---
 
-## ✍️ Design Decisions
+##  Design Decisions
 
 - **Ollama** for LLM to ensure low cost & local processing
 - **Slack Webhooks** are fast and easy to use
@@ -182,34 +173,32 @@ npm start
 
 ---
 
-## 🧪 Sample Summary Output
+##  Sample Summary Output
 
 ```
-📌 *Your Todo Summary*:
+ *Your Todo Summary*:
 - Finish React UI
 - Connect to MongoDB
 - Summarize with Ollama
 - Push to GitHub
 - Deploy on Vercel
 
-You have 5 tasks. Keep going! 💪
 ```
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
-> Add UI screenshots here once deployed
-
----
-
-## 📬 Contact
-
-Created by **Anil**  
-📧 anil@example.com | 🌐 [Your LinkedIn/GitHub URL]
 
 ---
 
-## 🛡️ License
+##  Contact
+
+anilpurrum@gmail.com 
+https://github.com/Anilpurrum2011/
+
+---
+
+##  License
 
 MIT © 2025 Anil
