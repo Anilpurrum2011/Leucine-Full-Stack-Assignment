@@ -112,8 +112,7 @@ npm start
 ```bash
 cd backend
 npm install
-cp .env .env   # Fill in MongoDB, Slack, Ollama details
-npm run dev
+node index.js
 ```
 
 ---
@@ -155,13 +154,21 @@ npm run dev
 
 ```json
 {
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/api/(.*)",
-      "destination": "/backend/server.js"
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
     }
   ]
 }
+
 ```
 
 ---
