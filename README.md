@@ -1,6 +1,6 @@
 #  Todo Summary Assistant – React + Node.js + Ollama + Slack + MongoDB
 
-This is a Todo List app that helps you keep track of your tasks. After you add or update your to-dos, the app uses a small built-in AI (called gemma:2b from Ollama) to create a short summary of your tasks. Then, it automatically sends that summary to a Slack channel using a simple connection called a webhook—so your team always knows what’s going on.
+<pre> ``` This is a Todo List app that helps you keep track of your tasks. After you add or update your to-dos, the app uses a small built-in AI (called `gemma:2b` from Ollama) to create a short summary of your tasks. Then, it automatically sends that summary to a Slack channel using a simple connection called a webhook—so your team always knows what’s going on. ``` </pre>
 ---
 
 ##  Features
