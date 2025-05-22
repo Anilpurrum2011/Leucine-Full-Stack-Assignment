@@ -15,6 +15,16 @@
 
 ---
 
+##  Screenshots
+
+![image](https://github.com/user-attachments/assets/64d3b980-df05-4107-bd4e-bcf9f1aeb1b2)
+![image](https://github.com/user-attachments/assets/c57a682b-b15d-4624-bd63-4f2a73e13c1f)
+![image](https://github.com/user-attachments/assets/d04dc338-8152-448d-b2c1-5e57970bf2b6)
+![image](https://github.com/user-attachments/assets/2530447d-b742-43d9-89a5-90ca5663ad43)
+![image](https://github.com/user-attachments/assets/19555b7a-ecd9-40a7-8daf-031a213ce8b5)
+
+---
+
 ##  Tech Stack
 
 | Layer        | Stack                          |
@@ -182,14 +192,6 @@ node index.js
 
 ---
 
----
-
-##  Screenshots
-
-![image](https://github.com/user-attachments/assets/64d3b980-df05-4107-bd4e-bcf9f1aeb1b2)
-![image](https://github.com/user-attachments/assets/d04dc338-8152-448d-b2c1-5e57970bf2b6)
-![image](https://github.com/user-attachments/assets/2530447d-b742-43d9-89a5-90ca5663ad43)
-![image](https://github.com/user-attachments/assets/19555b7a-ecd9-40a7-8daf-031a213ce8b5)
 
 ---
 
